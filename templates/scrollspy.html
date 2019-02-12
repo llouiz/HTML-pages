@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap 4 Scrollspy</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="word-device-width, initial-scale=1.0">
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="custom.css">
+	</head>
+	<body data-spy='scroll' data-target='.navbar' data-offset='50'>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#content1" class="nav-link active">Content 1</a></li>
+				<li class="nav-item"><a href="#content2" class="nav-link">Content 2</a></li>
+				<li class="nav-item"><a href="#content3" class="nav-link">Content 3</a></li>
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Content 4</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#content41">Section 1</a>
+						<a class="dropdown-item" href="#content42">Section 2</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="content1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom: 70px;">
+			<h1>Content 1</h1>
+			<p>This is what Scroll spy is going to look like, you can see that as you're scrolling down the page, the links are being updated in the navbar.</p>
+			<p>Scroll Spy makes use of Javascript so make sure to include both Bootstrap CSS and Javascript, also be sure to include jquery before Bootstrap files.</p>
+		</div>
+		<div id="content2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom: 70px;">
+			<h1>Content 2</h1>
+			<p>This is what Scroll spy is going to look like, you can see that as you're scrolling down the page, the links are being updated in the navbar.</p>
+			<p>Scroll Spy makes use of Javascript so make sure to include both Bootstrap CSS and Javascript, also be sure to include jquery before Bootstrap files.</p>
+		</div>
+		<div id="content3" class="container-fluid bg-primary" style="padding-top:70px;padding-bottom: 70px;">
+			<h1>Content 3</h1>
+			<p>This is what Scroll spy is going to look like, you can see that as you're scrolling down the page, the links are being updated in the navbar.</p>
+			<p>Scroll Spy makes use of Javascript so make sure to include both Bootstrap CSS and Javascript, also be sure to include jquery before Bootstrap files.</p>
+		</div>
+		<div id="content41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom: 70px;">
+			<h1>Sub Section 1</h1>
+			<p>This is what Scroll spy is going to look like, you can see that as you're scrolling down the page, the links are being updated in the navbar.</p>
+			<p>Scroll Spy makes use of Javascript so make sure to include both Bootstrap CSS and Javascript, also be sure to include jquery before Bootstrap files.</p>
+		</div>
+		<div id="content42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom: 70px;">
+			<h1>Sub Section 2</h1>
+			<p>This is what Scroll spy is going to look like, you can see that as you're scrolling down the page, the links are being updated in the navbar.</p>
+			<p>Scroll Spy makes use of Javascript so make sure to include both Bootstrap CSS and Javascript, also be sure to include jquery before Bootstrap files.</p>
+		</div>
+		<div class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom: 70px;">
+			<h1>The end</h1>
+			<p>This is what Scroll spy is going to look like, you can see that as you're scrolling down the page, the links are being updated in the navbar.</p>
+			<p>Scroll Spy makes use of Javascript so make sure to include both Bootstrap CSS and Javascript, also be sure to include jquery before Bootstrap files.</p>
+		</div>
+	</body>
+</html>
